@@ -8,21 +8,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Schema by doc-metrix</title>
+    <title>schema by doc-metrix</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>Schema</h1>
+        <h1>schema</h1>
         <h2>A JSON schema for performance metrics specifications</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/doc-metrix/schema/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/doc-metrix/schema/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/doc-metrix/schema" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
       </div>
     </header>
 
@@ -32,9 +26,15 @@
 <a name="validation" class="anchor" href="#validation"><span class="octicon octicon-link"></span></a>Validation</h2>
 
 <p>Copy and paste your specification below to see if it's a valid doc-metrix metrics specification.</p>
+<textarea id="input" style="width: 100%; height: 500px;"></textarea>
+<button id="validateButton">VALIDATE!</button>
+<div id="result" style="float: right"></div>
       </section>
     </div>
 
-    
+    <!-- I hate including jQuery for just one function -_- -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/tv4.min.js"></script>
+    <script src="javascripts/main.js"></script>
   </body>
 </html>
