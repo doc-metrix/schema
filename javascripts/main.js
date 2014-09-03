@@ -1,16 +1,27 @@
 (function() {
 
-  var inputBox = document.getElementById('input');
-  var resultBox = document.getElementById('result');
-  var validateButton = document.getElementById('validateButton');
+  // HTML elements
+  var inputBox = document.getElementById('input'),
+      resultBox = document.getElementById('result'),
+      validateButton = document.getElementById('validateButton');
 
+  // always grab the latest version of the schema
   $.getJSON('https://rawgit.com/doc-metrix/schema/master/metricsSchema.json')
-  .done(function ( schema ) {
+  .done(function onResponse( schema ) {
 
-    var validate = function validate() {
-      var specification = JSON.parse(inputBox.value);
+    
+    validateButton.addEventListener('click', validate, false);
+    
+    /**
+    * FUNCTION: validate()
+    *   Check if user input JSON is a valid specification
+    */
+    function validate() {
+      var specification = JSON.parse(inputBox.value ? inputBox.value : '{}'),
+          result;
+      
       if (specification) {
-        var result = tv4.validateMultiple(specification, schema);
+        result = tv4.validateMultiple(specification, schema);
         if (result.valid) {
           resultBox.innerHTML = "VALID!";
         } else {
@@ -18,9 +29,7 @@
           console.log(result);
         }
       }
-    };
-    
-    validateButton.addEventListener('click', validate, false);
+    }
   });
 
 })();
