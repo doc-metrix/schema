@@ -54,7 +54,10 @@
           "type": "string"
         },
         "units": {
-          "type": "string"
+          "type": [
+            "string", 
+            "null"
+          ]
         },
         "max": {
           "type": [
