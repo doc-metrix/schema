@@ -124,6 +124,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 5px 0;
 }
 
+.error {
+  margin-top: 2px;
+}
+
 dt {
   font-style: italic;
   font-weight: bold;
