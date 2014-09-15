@@ -18,7 +18,6 @@ The JSON schema is stored as [JSON](http://json.org/), a lightweight data-interc
 You are free to use the JSON schema as is or modify it for your own purposes. Simply copy the file and use accordingly.
 
 
-===
 ## Contributing
 
 To contribute to this schema, see the contributing [guide](https://github.com/doc-metrix/contributing). Any updates to the specification should be tagged.
@@ -35,7 +34,7 @@ Use [semantic versioning](http://semver.org/) (semvar) for communicating version
 * 	Any specification restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
 
 
-===
+
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT). 
