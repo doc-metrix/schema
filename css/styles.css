@@ -175,9 +175,18 @@ hr {
 }
 
 textarea {
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  min-height: 500px;
+  min-height: 400px;
+  font-size: 14px;
+  padding: 5px;
+  color: #474747;
+}
+
+textarea:before,
+textarea:after {
+  box-sizing: inherit;
 }
 
 footer {
