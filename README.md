@@ -8,7 +8,7 @@ Schema
 
 A schema for [doc-metrix](https://github.com/doc-metrix/) metric specifications. The schema uses the IETF's [JSON Schema v4](http://json-schema.org/latest/json-schema-core.html) and can be used by any JSON validator that conforms to `v4` schemas to validate a metric specification JSON file.
 
-We __recommend__ that individuals contributing metric specifications validate their specifications. Validation ensures that specification files conform to a standard that programs using those specification files can rely on.
+We __recommend__ that individuals contributing metric specifications validate their specifications. Validation ensures that specification files conform to a standard that programs using those specification files can rely on. We have created a [browser-based GUI](http://doc-metrix.github.io/schema/) to this end.
 
 
 ## Usage
