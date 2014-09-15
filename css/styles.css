@@ -182,11 +182,34 @@ textarea {
   font-size: 14px;
   padding: 5px;
   color: #474747;
+  display: block;
 }
 
 textarea:before,
 textarea:after {
   box-sizing: inherit;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.submit {
+  border: none;
+  color: #fff;
+  background: #474747;
+  width: auto;
+  padding-top: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #777;
+}
+
+.submit:focus {
+  outline: none;
 }
 
 footer {
