@@ -4,7 +4,7 @@ Schema
 > A JSON schema for performance metrics specifications.
 
 
-## Description
+## Overview
 
 A schema for [doc-metrix](https://github.com/doc-metrix/) metric specifications. The schema uses the IETF's [JSON Schema v4](http://json-schema.org/latest/json-schema-core.html) and can be used by any JSON validator that conforms to `v4` schemas to validate a metric specification JSON file.
 
