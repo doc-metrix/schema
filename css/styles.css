@@ -177,6 +177,7 @@ hr {
 textarea {
   width: 100%;
   max-width: 100%;
+  min-height: 500px;
 }
 
 footer {
