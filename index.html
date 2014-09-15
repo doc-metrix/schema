@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Schema by doc-metrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <title>doc-metrix | Metric Schema</title>
 
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -16,7 +20,7 @@
     <div class="wrapper">
       <header>
         <h1>Schema</h1>
-        <p>A JSON schema for performance metric specifications.</p>
+        <p>A JSON schema for metric specifications.</p>
 
         <p class="view"><a href="https://github.com/doc-metrix/schema">View the Project on GitHub <small>doc-metrix/schema</small></a></p>
 
@@ -32,39 +36,15 @@
 <a name="schema" class="anchor" href="#schema"><span class="octicon octicon-link"></span></a>Schema</h1>
 
 <blockquote>
-<p>A JSON schema for performance metrics specifications.</p>
+<p>A JSON schema for metric specifications.</p>
 </blockquote>
 
 <h2>
-<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
+<a name="validator" class="anchor" href="#validator"><span class="octicon octicon-link"></span></a>Validator</h2>
 
-<p>A schema for <a href="https://github.com/doc-metrix/">doc-metrix</a> metric specifications. The schema uses the IETF's <a href="http://json-schema.org/latest/json-schema-core.html">JSON Schema v4</a> and can be used by any JSON validator that conforms to <code>v4</code> schemas to validate a metric specification JSON file.</p>
+<p>...coming soon...</p>
 
-<p>We <strong>recommend</strong> that individuals contributing metric specifications validate their specifications. Validation ensures that specification files conform to a standard that programs using those specification files can rely on. We have created a <a href="http://doc-metrix.github.io/schema/">browser-based GUI</a> to this end.</p>
 
-<h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>The JSON schema is stored as <a href="http://json.org/">JSON</a>, a lightweight data-interchange format. While human-readable, the schema is intended to be used with a JSON validator, such as those found at the <a href="http://json-schema.org/implementations.html">IEFTF's JSON Schema site</a>.</p>
-
-<p>You are free to use the JSON schema as is or modify it for your own purposes. Simply copy the file and use accordingly.</p>
-
-<h2>
-<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
-
-<p>To contribute to this schema, see the contributing <a href="https://github.com/doc-metrix/contributing">guide</a>. Any updates to the specification should be tagged.</p>
-
-<div class="highlight highlight-bash"><pre><span class="nv">$ </span>git tag -a &lt;major.minor.patch&gt; -m <span class="s2">"[UPDATE] version."</span>
-<span class="nv">$ </span>git push origin &lt;major.minor.patch&gt;
-</pre></div>
-
-<p>Use <a href="http://semver.org/">semantic versioning</a> (semvar) for communicating versions.</p>
-
-<ul>
-<li>  Any new fields should be communicated as <code>minor</code> updates.</li>
-<li>  Any corrections/value modifications should be <code>patches</code>.</li>
-<li>  Any specification restructuring (changing field names, removing fields, etc) should be communicated as a <code>major</code> update.</li>
-</ul><h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p><a href="http://opensource.org/licenses/MIT">MIT license</a>. </p>
@@ -75,11 +55,15 @@
 <p>Copyright © 2014. <a href="http://nodeprime.com">NodePrime</a>.</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/doc-metrix">doc-metrix</a></p>
+        <p>This project is maintained by <a href="https://github.com/doc-metrix">doc-metrix</a> and initially sponsored by <a href="http://nodeprime.com">NodePrime.</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+     <!-- Scripts -->
+    <script type="text/javascript" src="js/scale.fix.js"></script>
+    <script type="text/javascript" src="js/tv4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     
   </body>
 </html>
