@@ -208,6 +208,10 @@ textarea:focus {
   outline: none;
 }
 
+a[name="validate"] {
+  cursor: pointer;
+}
+
 .results,
 .errors {
   width: 100%;
