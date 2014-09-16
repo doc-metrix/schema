@@ -88,6 +88,7 @@
 	function validate() {
 		var spec = input.value,
 			str = '',
+			errs,
 			res;
 		if ( !spec ) {
 			errors.innerHTML = '<p>Validation requires a metric specification.</p>';
