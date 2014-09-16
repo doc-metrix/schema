@@ -1,7 +1,7 @@
 Schema
 ======
 
-> A JSON schema for performance metrics specifications.
+> A JSON schema for performance metric specifications.
 
 
 ## Overview
