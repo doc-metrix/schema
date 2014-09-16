@@ -99,7 +99,8 @@ header {
   position:fixed;
 }
 
-header ul {
+header ul,
+section ul {
   list-style:none;
   height:40px;
   
@@ -119,14 +120,16 @@ header ul {
   width:270px;
 }
 
-header li {
+header li,
+section li {
   width:89px;
   float:left;
   border-right:1px solid #d2d2d2;
   height:40px;
 }
 
-header ul a {
+header ul a,
+section ul a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -141,17 +144,20 @@ strong {
   font-weight:700;
 }
 
-header ul li + li {
+header ul li + li,
+section ul li + li {
   width:88px;
   border-left:1px solid #fff;
 }
 
-header ul li + li + li {
+header ul li + li + li,
+section ul li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
+header ul a strong,
+section ul a strong  {
   font-size:14px;
   display:block;
   color:#222;
@@ -191,24 +197,6 @@ textarea:after {
 }
 
 textarea:focus {
-  outline: none;
-}
-
-.submit {
-  border: none;
-  color: #fff;
-  background: #474747;
-  width: auto;
-  padding-top: 40px;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.submit:hover {
-  background: #777;
-}
-
-.submit:focus {
   outline: none;
 }
 
