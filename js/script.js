@@ -108,7 +108,7 @@
 			results.innerHTML = '<p>Specification is valid.</p>';
 			return;
 		}
-		errs = results.errors;
+		errs = res.errors;
 		for ( var i = 0; i < errs.length; i++ ) {
 			str += '<p class="error">';
 			str += '<strong>Metric:</strong>' + errs[ i ].dataPath.substr( 1 ) + '<br/>';
