@@ -90,6 +90,9 @@
 			str = '',
 			errs,
 			res;
+
+		results.innerHTML = '';
+		errors.innerHTML = '';
 		if ( !spec ) {
 			errors.innerHTML = '<p>Validation requires a metric specification.</p>';
 			return;
