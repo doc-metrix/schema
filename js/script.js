@@ -111,8 +111,8 @@
 		errs = res.errors;
 		for ( var i = 0; i < errs.length; i++ ) {
 			str += '<p class="error">';
-			str += '<strong>Metric:</strong>' + errs[ i ].dataPath.substr( 1 ) + '<br/>';
-			str += '<strong>Error:</strong>' + errs[ i ] .message;
+			str += '<strong>Metric:</strong> ' + errs[ i ].dataPath.substr( 1 ) + '<br/>';
+			str += '<strong>Error:</strong> ' + errs[ i ] .message;
 			str += '</p><hr>';
 		}
 		errors.innerHTML = str;
