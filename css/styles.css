@@ -124,6 +124,7 @@ header ul {
 }
 
 section ul {
+  margin-top: 20px;
   width: 90px;
 }
 
@@ -205,6 +206,15 @@ textarea:after {
 
 textarea:focus {
   outline: none;
+}
+
+.results,
+.errors {
+  width: 100%;
+}
+
+.errors {
+  color: rgb( 255, 0, 0 );
 }
 
 footer {
