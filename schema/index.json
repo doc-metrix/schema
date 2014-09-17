@@ -108,17 +108,10 @@
         "platforms": {
           "type": "object"
         },
-        "device": {
+        "devices": {
           "oneOf": [
-            { "type": "string" },
             { "$ref": "#/definitions/stringArray" },
             { "type": "null" }
-          ]
-        },
-        "vendors": {
-          "oneOf": [
-           { "type": "string" },
-           { "$ref": "#/definitions/stringArray" }
           ]
         },
         "classification": {
@@ -140,8 +133,7 @@
         "description",
         "notes",
         "platforms",
-        "device",
-        "vendors",
+        "devices",
         "classification",
         "refs"
       ]
