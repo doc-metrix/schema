@@ -81,31 +81,31 @@
 
 	/**
 	* FUNCTION: validate()
-	*	Validates a metric specification and outputs the validation results.
+	*	Validates metric documentation and outputs the validation results.
 	*
 	* @private
 	*/
 	function validate() {
-		var spec = input.value,
+		var doc = input.value,
 			str = '',
 			errs,
 			res;
 
 		results.innerHTML = '';
 		errors.innerHTML = '';
-		if ( !spec ) {
-			errors.innerHTML = '<p>Validation requires a metric specification.</p>';
+		if ( !doc ) {
+			errors.innerHTML = '<p>Validation requires metric documentation.</p>';
 			return;
 		}
 		try {
-			spec = JSON.parse( spec );
+			doc = JSON.parse( doc );
 		} catch ( error ) {
-			errors.innerHTML = '<p>A metric specification must be valid JSON.</p>';
+			errors.innerHTML = '<p>Metric documentation must be valid JSON.</p>';
 			return;
 		}
-		res = tv4.validateMultiple( spec, schema );
+		res = tv4.validateMultiple( doc, schema );
 		if ( res.valid ) {
-			results.innerHTML = '<p>Specification is valid.</p>';
+			results.innerHTML = '<p>Documentation is valid.</p>';
 			return;
 		}
 		errs = res.errors;
