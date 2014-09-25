@@ -1,14 +1,14 @@
 Schema
 ======
 
-> A JSON schema for performance metric specifications.
+> A JSON schema for performance metric documentation.
 
 
 ## Overview
 
-A schema for [doc-metrix](https://github.com/doc-metrix/) metric specifications. The schema uses the IETF's [JSON Schema v4](http://json-schema.org/latest/json-schema-core.html) and can be used by any JSON validator that conforms to `v4` schemas to validate a metric specification JSON file.
+A schema for [doc-metrix](https://github.com/doc-metrix/) metric documentation. The schema uses the IETF's [JSON Schema v4](http://json-schema.org/latest/json-schema-core.html) and can be used by any JSON validator that conforms to `v4` schemas to validate a metric documentation JSON file.
 
-We __recommend__ that individuals contributing metric specifications validate their specifications. Validation ensures that specification files conform to a standard that programs using those specification files can rely on. We have created a [browser-based GUI](http://doc-metrix.github.io/schema/) to this end.
+We __recommend__ that individuals contributing metric documentation validate their documentation. Validation ensures that documentation files conform to a standard that programs using those documentation files can rely on. We have created a [browser-based GUI](http://doc-metrix.github.io/schema/) to this end.
 
 
 ## Usage
@@ -20,7 +20,7 @@ You are free to use the JSON schema as is or modify it for your own purposes. Si
 
 ## Contributing
 
-To contribute to this schema, see the contributing [guide](https://github.com/doc-metrix/contributing). Any updates to the specification should be tagged.
+To contribute to this schema, see the contributing [guide](https://github.com/doc-metrix/contributing). Any updates to the schema should be tagged.
 
 ``` bash
 $ git tag -a <major.minor.patch> -m "[UPDATE] version."
@@ -31,7 +31,7 @@ Use [semantic versioning](http://semver.org/) (semvar) for communicating version
 
 *	Any new fields should be communicated as `minor` updates.
 *	Any corrections/value modifications should be `patches`.
-* 	Any specification restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
+* 	Any schema restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
 
 
 

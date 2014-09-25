@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "description": "Schema for doc-metrix metric specifications.",
+  "description": "Schema for doc-metrix metric documentation.",
   
   "definitions": {
     "positiveInteger": {
